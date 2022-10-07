@@ -1,7 +1,6 @@
 ﻿using System.Text;
-using Converters;
 
-namespace Keys
+namespace MagmaCrypt.Keys
 {
     internal class KeysMagma
     {
@@ -20,13 +19,13 @@ namespace Keys
                 kRBytes.Reverse();
                 _keysRound.Add(BitConverter.ToUInt32(kRBytes.ToArray()));
             }
-            Console.WriteLine("\nRound keys:\n");
+            /*Console.WriteLine("\nRound keys:\n");
             int ind = 1;
             foreach (var tmp in _keysRound)
             {
                 Console.WriteLine(" K{0} = {1}  \t{2}", ind, tmp, ConvertBits.Convert64BitsToBinToString(tmp).Remove(0,42));
                 ind++;
-            }
+            }*/
         }
     }
 }

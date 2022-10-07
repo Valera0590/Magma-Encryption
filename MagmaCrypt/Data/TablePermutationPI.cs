@@ -1,5 +1,5 @@
 ﻿
-namespace Converters
+namespace MagmaCrypt.Data
 {
     internal class TablePermutationPI
     {
